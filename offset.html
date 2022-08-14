@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+            integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./css/style.css">
+        <title>Carbon Offset</title>
+    </head>
+    <body>
+        <section class="showcase">
+            <div class="text">
+                <h1>Carbon Offset</h1>
+                <!-- Solar Lights and Panels -->
+                <h3>Solar Lights and Panels</h3>
+                <form>
+                    <fieldset class="form-group">
+                        <div class="row">
+                            <legend class="col-form-label col-sm-2 pt-0">Number
+                                of Panels</legend>
+                            <div class="col-sm-10">
+                                <input type="number" class="form-control"
+                                    id="#panels"
+                                    placeholder="15">
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="form-group">
+                        <div class="row">
+                            <legend class="col-form-label col-sm-2 pt-0">Capacity
+                                in watts</legend>
+                            <div class="col-sm-10">
+                                <input type="number" class="form-control"
+                                    id="watts"
+                                    placeholder="2">
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="form-group">
+                        <div class="row">
+                            <legend class="col-form-label col-sm-2 pt-0">Time
+                                (hrs)</legend>
+                            <div class="col-sm-10">
+                                <input type="number" class="form-control"
+                                    id="watts"
+                                    placeholder="2">
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="form-group">
+                        <div class="row">
+                            <legend class="col-form-label col-sm-2 pt-0">watt-hr</legend>
+                            <div class="col-sm-10">
+                                <input type="number" class="form-control"
+                                    id="watt-hr"
+                                    placeholder="2">
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="form-group">
+                        <div class="row">
+                            <legend class="col-form-label col-sm-2 pt-0">Total
+                                Daily Consumption</legend>
+                            <div class="col-sm-10">
+                                <input type="number" class="form-control"
+                                    id="daily-consumption"
+                                    placeholder="2">
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="form-group">
+                        <div class="row">
+                            <legend class="col-form-label col-sm-2 pt-0">Total
+                                Yearly Consumption</legend>
+                            <div class="col-sm-10">
+                                <input type="number" class="form-control"
+                                    id="yearly-consumption"
+                                    placeholder="2">
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <div class="form-group row">
+                        <div class="col-sm-10">
+                            <button type="submit" class="btn btn-primary">Calculate
+                                Carbon Offset for Solar Lights and Panels</button>
+                        </div>
+                    </div>
+                </form>
+
+                <!-- Stunned Greenery -->
+                <h3>Stunned Greenery</h3>
+                <form>
+                    <fieldset class="form-group">
+                        <div class="row">
+                            <legend class="col-form-label col-sm-2 pt-0">Area
+                                under grass (m2)</legend>
+                            <div class="col-sm-10">
+                                <input type="number" class="form-control"
+                                    id="#area-m2"
+                                    placeholder="15">
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <div class="form-group row">
+                        <div class="col-sm-10">
+                            <button type="submit" class="btn btn-primary">Calculate
+                                Carbon Offset for Stunned Greenery</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+            integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./css/style.css">
+        <title>Carbon</title>
+    </head>
+    <body>
+        <section class="showcase">
+            <div class="text">
+                <h2></h2>
+                <a href="footprint.html">Carbon Footprint</a><br><br>
+                <a href="offset.html">Carbon Offset</a><br><br>
+                <a href="sequestration.html">Carbon Sequestration</a><br><br>
+                <a href="footprint.html">Carbon Credit</a>
+            </div>
+            <ul class="social">
+                <li><i class="fa-brands fa-facebook-f fa-2x"></i></li>
+                <li><i class="fa-brands fa-twitter fa-2x"></i></li>
+                <li><i class="fa-brands fa-instagram fa-2x"></i></li>
+            </ul>
+        </section>
+        <script>
+        const menuToggle = document.querySelector('.toggle');
+        const showcase = document.querySelector('.showcase');
+
+        menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        showcase.classList.toggle('active');
+      })
+    </script>
+    </body>
+</html>

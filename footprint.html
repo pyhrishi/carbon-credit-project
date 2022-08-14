@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+            integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./css/style.css">
+        <title>Carbon Footprint</title>
+    </head>
+    <body>
+        <section class="showcase">
+            <div class="text">
+                <h1>Carbon Footprint</h1>
+                <!-- Plying of Vehicles -->
+                <h3>Plying of Vehicles</h3>
+                <form>
+                    <fieldset class="form-group">
+                        <div class="row">
+                            <legend class="col-form-label col-sm-2 pt-0">Choose
+                                type of
+                                vehicle</legend>
+                            <div class="col-sm-10">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio"
+                                        name="gridRadios" id="gridRadios1"
+                                        value="option1" checked>
+                                    <label class="form-check-label"
+                                        for="gridRadios1">
+                                        Two Wheeler Petrol (Moped)
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio"
+                                        name="gridRadios" id="gridRadios2"
+                                        value="option2">
+                                    <label class="form-check-label"
+                                        for="gridRadios2">
+                                        Two Wheeler Petrol (Bikes)
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio"
+                                        name="gridRadios" id="gridRadios3"
+                                        value="option3">
+                                    <label class="form-check-label"
+                                        for="gridRadios3">
+                                        Four Wheeler Diesel Motors
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio"
+                                        name="gridRadios" id="gridRadios3"
+                                        value="option3">
+                                    <label class="form-check-label"
+                                        for="gridRadios3">
+                                        Four Wheeler Petrol Motors
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio"
+                                        name="gridRadios" id="gridRadios3"
+                                        value="option3">
+                                    <label class="form-check-label"
+                                        for="gridRadios3">
+                                        Heavy Vehicles (Trucks, Tractors, etc.)
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="form-group">
+                        <div class="row">
+                            <legend class="col-form-label col-sm-2 pt-0">Mileage
+                                of
+                                vehicle</legend>
+                            <div class="col-sm-10">
+                                <input type="number" class="form-control"
+                                    id="mileage"
+                                    placeholder="15">
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="form-group">
+                        <div class="row">
+                            <legend class="col-form-label col-sm-2 pt-0">Number
+                                of
+                                vehicles</legend>
+                            <div class="col-sm-10">
+                                <input type="number" class="form-control"
+                                    id="#vehicles"
+                                    placeholder="2">
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <div class="form-group row">
+                        <div class="col-sm-10">
+                            <button type="submit" class="btn btn-primary">Calculate
+                                Carbon Footprint for Plying of Vehicles</button>
+                        </div>
+                    </div>
+                </form>
+
+                <!-- Human Factor -->
+                <h3>Human Factor</h3>
+                <form>
+                    <fieldset class="form-group">
+                        <div class="row">
+                            <legend class="col-form-label col-sm-2 pt-0">Sectors</legend>
+                            <div class="col-sm-10">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio"
+                                        name="gridRadios" id="gridRadios1"
+                                        value="option1" checked>
+                                    <label class="form-check-label"
+                                        for="gridRadios1">
+                                        Residential Boys Scholars
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio"
+                                        name="gridRadios" id="gridRadios2"
+                                        value="option2">
+                                    <label class="form-check-label"
+                                        for="gridRadios2">
+                                        Residential Girls Scholars
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio"
+                                        name="gridRadios" id="gridRadios3"
+                                        value="option3">
+                                    <label class="form-check-label"
+                                        for="gridRadios3">
+                                        Day Scholars
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio"
+                                        name="gridRadios" id="gridRadios3"
+                                        value="option3">
+                                    <label class="form-check-label"
+                                        for="gridRadios3">
+                                        Staff Members
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio"
+                                        name="gridRadios" id="gridRadios3"
+                                        value="option3">
+                                    <label class="form-check-label"
+                                        for="gridRadios3">
+                                        Casual Workers
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio"
+                                        name="gridRadios" id="gridRadios3"
+                                        value="option3">
+                                    <label class="form-check-label"
+                                        for="gridRadios3">
+                                        Follow -Up People
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="form-group">
+                        <div class="row">
+                            <legend class="col-form-label col-sm-2 pt-0">Population</legend>
+                            <div class="col-sm-10">
+                                <input type="number" class="form-control"
+                                    id="population" placeholder="150000">
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="form-group">
+                        <div class="row">
+                            <legend class="col-form-label col-sm-2 pt-0">Average
+                                Time
+                                Spent in campus (Hours)</legend>
+                            <div class="col-sm-10">
+                                <input type="number" class="form-control"
+                                    id="avg_time_spent" placeholder="5">
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="form-group">
+                        <div class="row">
+                            <legend class="col-form-label col-sm-2 pt-0">Amout
+                                of CO2 eq
+                                (in kg)</legend>
+                            <div class="col-sm-10">
+                                <input type="number" class="form-control"
+                                    id="co2_amount_eq" placeholder="22.3">
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <div class="form-group row">
+                        <div class="col-sm-10">
+                            <button type="submit" class="btn btn-primary">Calculate
+                                Carbon Footprint for Human Factor</button>
+                        </div>
+                    </div>
+                </form>
+
+                <!-- Electricity -->
+                <h5>Electricity</h5>
+                <form>
+                    <fieldset class="form-group">
+                        <div class="row">
+                            <legend class="col-form-label col-sm-2
+                                pt-0">Total electricity in kWh for a month in
+                                all as output (kWh/month)</legend>
+                            <div class="col-sm-10">
+                                <input type="number"
+                                    class="form-control"
+                                    id="#month"
+                                    placeholder="10">
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="form-group">
+                        <div class="row">
+                            <legend class="col-form-label col-sm-2
+                                pt-0">Total electricity in kWh for a year in all
+                                as output (kWh/year)</legend>
+                            <div class="col-sm-10">
+                                <input type="number"
+                                    class="form-control"
+                                    id="#year"
+                                    placeholder="10">
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <div class="form-group row">
+                        <div class="col-sm-10">
+                            <button type="submit" class="btn
+                                btn-primary">Calculate
+                                Carbon Footprint for Electricity</button>
+                        </div>
+                    </div>
+
+                </form>
+
+                <!-- Solid Waste Generation -->
+                <h3>Solid Waste Generation</h3>
+                <form>
+                    <fieldset class="form-group">
+                        <div class="row">
+                            <legend class="col-form-label col-sm-2 pt-0">Type</legend>
+                            <div class="col-sm-10">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio"
+                                        name="gridRadios" id="gridRadios1"
+                                        value="option1" checked>
+                                    <label class="form-check-label"
+                                        for="gridRadios1">
+                                        Floating Population
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio"
+                                        name="gridRadios" id="gridRadios1"
+                                        value="option1" checked>
+                                    <label class="form-check-label"
+                                        for="gridRadios1">
+                                        Permanent Population
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio"
+                                        name="gridRadios" id="gridRadios1"
+                                        value="option1" checked>
+                                    <label class="form-check-label"
+                                        for="gridRadios1">
+                                        Floating Population and Permanent
+                                        Population
+                                    </label>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+
+                    <!-- Floating Population-->
+                    <h5>Floating Population</h5>
+                    <form>
+                        <fieldset class="form-group">
+                            <div class="row">
+                                <legend class="col-form-label col-sm-2 pt-0">Zone</legend>
+                                <div class="col-sm-10">
+                                    <div class="form-check">
+                                        <input class="form-check-input"
+                                            type="radio"
+                                            name="gridRadios" id="gridRadios1"
+                                            value="option1" checked>
+                                        <label class="form-check-label"
+                                            for="gridRadios1">
+                                            Administrative Department
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input"
+                                            type="radio"
+                                            name="gridRadios" id="gridRadios2"
+                                            value="option2">
+                                        <label class="form-check-label"
+                                            for="gridRadios2">
+                                            Civil Engineering and Applied
+                                            Mechanics
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input"
+                                            type="radio"
+                                            name="gridRadios" id="gridRadios3"
+                                            value="option3">
+                                        <label class="form-check-label"
+                                            for="gridRadios3">
+                                            Mechanical
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input"
+                                            type="radio"
+                                            name="gridRadios" id="gridRadios3"
+                                            value="option3">
+                                        <label class="form-check-label"
+                                            for="gridRadios3">
+                                            Electrical
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input"
+                                            type="radio"
+                                            name="gridRadios" id="gridRadios3"
+                                            value="option3">
+                                        <label class="form-check-label"
+                                            for="gridRadios3">
+                                            Electronics and Telecommunication
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input"
+                                            type="radio"
+                                            name="gridRadios" id="gridRadios3"
+                                            value="option3">
+                                        <label class="form-check-label"
+                                            for="gridRadios3">
+                                            Computer
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input"
+                                            type="radio"
+                                            name="gridRadios" id="gridRadios3"
+                                            value="option3">
+                                        <label class="form-check-label"
+                                            for="gridRadios3">
+                                            Instrumentation
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input"
+                                            type="radio"
+                                            name="gridRadios" id="gridRadios3"
+                                            value="option3">
+                                        <label class="form-check-label"
+                                            for="gridRadios3">
+                                            Canteen
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input"
+                                            type="radio"
+                                            name="gridRadios" id="gridRadios3"
+                                            value="option3">
+                                        <label class="form-check-label"
+                                            for="gridRadios3">
+                                            Library
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input"
+                                            type="radio"
+                                            name="gridRadios" id="gridRadios3"
+                                            value="option3">
+                                        <label class="form-check-label"
+                                            for="gridRadios3">
+                                            Workshops
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input"
+                                            type="radio"
+                                            name="gridRadios" id="gridRadios3"
+                                            value="option3">
+                                        <label class="form-check-label"
+                                            for="gridRadios3">
+                                            Sports Room
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input"
+                                            type="radio"
+                                            name="gridRadios" id="gridRadios3"
+                                            value="option3">
+                                        <label class="form-check-label"
+                                            for="gridRadios3">
+                                            Others
+                                        </label>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset class="form-group">
+                                <div class="row">
+                                    <legend class="col-form-label col-sm-2
+                                        pt-0">Total
+                                        Population</legend>
+                                    <div class="col-sm-10">
+                                        <input type="number"
+                                            class="form-control"
+                                            id="population"
+                                            placeholder="150000">
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset class="form-group">
+                                <div class="row">
+                                    <legend class="col-form-label col-sm-2
+                                        pt-0">Amount
+                                        of Solid waste generated (kg/day)</legend>
+                                    <div class="col-sm-10">
+                                        <input type="number"
+                                            class="form-control"
+                                            id="solid_waste_generated"
+                                            placeholder="0.045">
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset class="form-group">
+                                <div class="row">
+                                    <legend class="col-form-label col-sm-2
+                                        pt-0">Amout
+                                        of CO2 eq (kg/day)</legend>
+                                    <div class="col-sm-10">
+                                        <input type="number"
+                                            class="form-control"
+                                            id="co2_amount_eq"
+                                            placeholder="22.3">
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                            <div class="form-group row">
+                                <div class="col-sm-10">
+                                    <button type="submit" class="btn
+                                        btn-primary">Calculate
+                                        Carbon Footprint for Solid Waste
+                                        Generation</button>
+                                </div>
+                            </div>
+
+                        </form>
+
+                        <!-- Permanent Population-->
+                        <h5>Permanent Population</h5>
+                        <form>
+                            <fieldset class="form-group">
+                                <div class="row">
+                                    <legend class="col-form-label col-sm-2
+                                        pt-0">Zone</legend>
+                                    <div class="col-sm-10">
+                                        <div class="form-check">
+                                            <input class="form-check-input"
+                                                type="radio"
+                                                name="gridRadios"
+                                                id="gridRadios1"
+                                                value="option1" checked>
+                                            <label class="form-check-label"
+                                                for="gridRadios1">
+                                                Hostel Boys
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input"
+                                                type="radio"
+                                                name="gridRadios"
+                                                id="gridRadios2"
+                                                value="option2">
+                                            <label class="form-check-label"
+                                                for="gridRadios2">
+                                                Hostel Girls
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input"
+                                                type="radio"
+                                                name="gridRadios"
+                                                id="gridRadios3"
+                                                value="option3">
+                                            <label class="form-check-label"
+                                                for="gridRadios3">
+                                                Principal Bunglow
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input"
+                                                type="radio"
+                                                name="gridRadios"
+                                                id="gridRadios3"
+                                                value="option3">
+                                            <label class="form-check-label"
+                                                for="gridRadios3">
+                                                Warden Quarters and Guard Room
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input"
+                                                type="radio"
+                                                name="gridRadios"
+                                                id="gridRadios3"
+                                                value="option3">
+                                            <label class="form-check-label"
+                                                for="gridRadios3">
+                                                Others
+                                            </label>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                                <fieldset class="form-group">
+                                    <div class="row">
+                                        <legend class="col-form-label col-sm-2
+                                            pt-0">Total
+                                            Population</legend>
+                                        <div class="col-sm-10">
+                                            <input type="number"
+                                                class="form-control"
+                                                id="population"
+                                                placeholder="150000">
+                                        </div>
+                                    </div>
+                                </fieldset>
+                                <fieldset class="form-group">
+                                    <div class="row">
+                                        <legend class="col-form-label col-sm-2
+                                            pt-0">Amount
+                                            of Solid waste generated (kg/day)</legend>
+                                        <div class="col-sm-10">
+                                            <input type="number"
+                                                class="form-control"
+                                                id="solid_waste_generated"
+                                                placeholder="0.05">
+                                        </div>
+                                    </div>
+                                </fieldset>
+                                <fieldset class="form-group">
+                                    <div class="row">
+                                        <legend class="col-form-label col-sm-2
+                                            pt-0">Amout
+                                            of CO2 eq (kg/day)</legend>
+                                        <div class="col-sm-10">
+                                            <input type="number"
+                                                class="form-control"
+                                                id="co2_amount_eq"
+                                                placeholder="22.3">
+                                        </div>
+                                    </div>
+                                </fieldset>
+
+                                <div class="form-group row">
+                                    <div class="col-sm-10">
+                                        <button type="submit" class="btn
+                                            btn-primary">Calculate
+                                            Carbon Footprint for Solid Waste
+                                            Generation</button>
+                                    </div>
+                                </div>
+
+                            </form>
+
+                            <!-- Floating Population and Permanent Population -->
+                            <h5>Floating Population and Permanent Population</h5>
+                            <form>
+                                <legend class="col-form-label col-sm-2 pt-0">Floating
+                                    Population</legend>
+                                <fieldset class="form-group">
+                                    <div class="row">
+                                        <legend class="col-form-label col-sm-2
+                                            pt-0">Zone</legend>
+                                        <div class="col-sm-10">
+                                            <div class="form-check">
+                                                <input class="form-check-input"
+                                                    type="radio"
+                                                    name="gridRadios"
+                                                    id="gridRadios1"
+                                                    value="option1" checked>
+                                                <label class="form-check-label"
+                                                    for="gridRadios1">
+                                                    Administrative Department
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input"
+                                                    type="radio"
+                                                    name="gridRadios"
+                                                    id="gridRadios2"
+                                                    value="option2">
+                                                <label class="form-check-label"
+                                                    for="gridRadios2">
+                                                    Civil Engineering and
+                                                    Applied
+                                                    Mechanics
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input"
+                                                    type="radio"
+                                                    name="gridRadios"
+                                                    id="gridRadios3"
+                                                    value="option3">
+                                                <label class="form-check-label"
+                                                    for="gridRadios3">
+                                                    Mechanical
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input"
+                                                    type="radio"
+                                                    name="gridRadios"
+                                                    id="gridRadios3"
+                                                    value="option3">
+                                                <label class="form-check-label"
+                                                    for="gridRadios3">
+                                                    Electrical
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input"
+                                                    type="radio"
+                                                    name="gridRadios"
+                                                    id="gridRadios3"
+                                                    value="option3">
+                                                <label class="form-check-label"
+                                                    for="gridRadios3">
+                                                    Electronics and
+                                                    Telecommunication
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input"
+                                                    type="radio"
+                                                    name="gridRadios"
+                                                    id="gridRadios3"
+                                                    value="option3">
+                                                <label class="form-check-label"
+                                                    for="gridRadios3">
+                                                    Computer
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input"
+                                                    type="radio"
+                                                    name="gridRadios"
+                                                    id="gridRadios3"
+                                                    value="option3">
+                                                <label class="form-check-label"
+                                                    for="gridRadios3">
+                                                    Instrumentation
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input"
+                                                    type="radio"
+                                                    name="gridRadios"
+                                                    id="gridRadios3"
+                                                    value="option3">
+                                                <label class="form-check-label"
+                                                    for="gridRadios3">
+                                                    Canteen
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input"
+                                                    type="radio"
+                                                    name="gridRadios"
+                                                    id="gridRadios3"
+                                                    value="option3">
+                                                <label class="form-check-label"
+                                                    for="gridRadios3">
+                                                    Library
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input"
+                                                    type="radio"
+                                                    name="gridRadios"
+                                                    id="gridRadios3"
+                                                    value="option3">
+                                                <label class="form-check-label"
+                                                    for="gridRadios3">
+                                                    Workshops
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input"
+                                                    type="radio"
+                                                    name="gridRadios"
+                                                    id="gridRadios3"
+                                                    value="option3">
+                                                <label class="form-check-label"
+                                                    for="gridRadios3">
+                                                    Sports Room
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input"
+                                                    type="radio"
+                                                    name="gridRadios"
+                                                    id="gridRadios3"
+                                                    value="option3">
+                                                <label class="form-check-label"
+                                                    for="gridRadios3">
+                                                    Others
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+
+                                    <legend class="col-form-label col-sm-2
+                                        pt-0">Permanent
+                                        Population</legend>
+                                    <fieldset class="form-group">
+                                        <div class="row">
+                                            <legend class="col-form-label
+                                                col-sm-2
+                                                pt-0">Zone</legend>
+                                            <div class="col-sm-10">
+                                                <div class="form-check">
+                                                    <input
+                                                        class="form-check-input"
+                                                        type="radio"
+                                                        name="gridRadios"
+                                                        id="gridRadios1"
+                                                        value="option1" checked>
+                                                    <label
+                                                        class="form-check-label"
+                                                        for="gridRadios1">
+                                                        Hostel Boys
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input
+                                                        class="form-check-input"
+                                                        type="radio"
+                                                        name="gridRadios"
+                                                        id="gridRadios2"
+                                                        value="option2">
+                                                    <label
+                                                        class="form-check-label"
+                                                        for="gridRadios2">
+                                                        Hostel Girls
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input
+                                                        class="form-check-input"
+                                                        type="radio"
+                                                        name="gridRadios"
+                                                        id="gridRadios3"
+                                                        value="option3">
+                                                    <label
+                                                        class="form-check-label"
+                                                        for="gridRadios3">
+                                                        Principal Bunglow
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input
+                                                        class="form-check-input"
+                                                        type="radio"
+                                                        name="gridRadios"
+                                                        id="gridRadios3"
+                                                        value="option3">
+                                                    <label
+                                                        class="form-check-label"
+                                                        for="gridRadios3">
+                                                        Warden Quarters and
+                                                        Guard Room
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input
+                                                        class="form-check-input"
+                                                        type="radio"
+                                                        name="gridRadios"
+                                                        id="gridRadios3"
+                                                        value="option3">
+                                                    <label
+                                                        class="form-check-label"
+                                                        for="gridRadios3">
+                                                        Others
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+
+                                        <fieldset class="form-group">
+                                            <div class="row">
+                                                <legend class="col-form-label
+                                                    col-sm-2
+                                                    pt-0">Total
+                                                    Population</legend>
+                                                <div class="col-sm-10">
+                                                    <input type="number"
+                                                        class="form-control"
+                                                        id="population"
+                                                        placeholder="150000">
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                        <fieldset class="form-group">
+                                            <div class="row">
+                                                <legend class="col-form-label
+                                                    col-sm-2
+                                                    pt-0">Amount
+                                                    of Solid waste generated
+                                                    (kg/day)</legend>
+                                                <div class="col-sm-10">
+                                                    <input type="number"
+                                                        class="form-control"
+                                                        id="solid_waste_generated"
+                                                        placeholder="0.045">
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                        <fieldset class="form-group">
+                                            <div class="row">
+                                                <legend class="col-form-label
+                                                    col-sm-2
+                                                    pt-0">Amout
+                                                    of CO2 eq (kg/day)</legend>
+                                                <div class="col-sm-10">
+                                                    <input type="number"
+                                                        class="form-control"
+                                                        id="co2_amount_eq"
+                                                        placeholder="22.3">
+                                                </div>
+                                            </div>
+                                        </fieldset>
+
+                                        <div class="form-group row">
+                                            <div class="col-sm-10">
+                                                <button type="submit" class="btn
+                                                    btn-primary">Calculate
+                                                    Carbon Footprint for Solid
+                                                    Waste
+                                                    Generation</button>
+                                            </div>
+                                        </div>
+
+                                    </form>
+
+                                    <!-- LPG -->
+                                    <h5>LPG</h5>
+                                    <form>
+                                        <fieldset class="form-group">
+                                            <div class="row">
+                                                <legend class="col-form-label
+                                                    col-sm-2
+                                                    pt-0">Number of cylinders
+                                                    used in a year</legend>
+                                                <div class="col-sm-10">
+                                                    <input type="number"
+                                                        class="form-control"
+                                                        id="#cylinders"
+                                                        placeholder="10">
+                                                </div>
+                                            </div>
+                                        </fieldset>
+
+                                        <div class="form-group row">
+                                            <div class="col-sm-10">
+                                                <button type="submit" class="btn
+                                                    btn-primary">Calculate
+                                                    Carbon Footprint for LPG</button>
+                                            </div>
+                                        </div>
+
+                                    </form>
+                                </div>
+                            </section>
+                        </body>
+                    </html>
